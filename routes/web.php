@@ -13,6 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Auth::routes();
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('/welcome');
 });
+
+Route::resource('home', 'HomeController')->only([
+    'index',
+])->names([
+    'index' => 'home',
+]);
+
+Route::resource('tasks', 'TaskController')->only([
+    'index',
+    'store',
+    'destroy',
+]);
