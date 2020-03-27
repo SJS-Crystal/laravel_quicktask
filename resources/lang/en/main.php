@@ -20,5 +20,10 @@ return [
     'resetPassword' => 'Reset Password',
     'sendPasswordResetLink' => 'Send Password Reset Link',
     'toggleNavigation' => 'Toggle navigation',
-    'logout' => 'Logout'
+    'logout' => 'Logout',
+    'alert_error' => 'Whoops! Something went wrong!',
+    'task' => 'Task',
+    'current_task' => 'Current Tasks',
+    'add_task' => 'Add Task',
+    'delete' => 'Delete',
 ];
